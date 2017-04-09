@@ -1,4 +1,4 @@
-# 30secondlearning
+# 30 Second Learning
 
 30 second learning is a social media platform that uses condensed educational content to target the shortened attention span of the younger generations to optimize learning. 
 
