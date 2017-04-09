@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+    meta(name='theme-color', content='#2196F3')
+    title 30 Second Learning
+    link(href='css/style.css', type='text/css', rel='stylesheet')
+    link(href='min/plugin-min.css', type='text/css', rel='stylesheet')
+    link(href='min/custom-min.css', type='text/css', rel='stylesheet')
+  body#top.scrollspy
+    #loader-wrapper
+      #loader
+      .loader-section.section-left
+      .loader-section.section-right
+    .navbar-fixed
+      nav#nav_f.red(role='navigation')
+        .container
+          .nav-wrapper
+            a(href='#')
+              img#logo-img(src='./img/30 Second Learning Logo2.png')
+            ul.right.hide-on-med-and-down
+              li
+                a(href='/') Login
+              li
+                a(href='#') About
+              li
+                a(href='/') Help
+            ul#nav-mobile.side-nav
+              li
+                a(href='/') Login
+              li
+                a(href='#') About
+              li
+                a(href='/') Help
+            a.button-collapse(href='#', data-activates='nav-mobile')
+              i.mdi-navigation-menu
+    #index-banner.section.no-pad-bot
+      .container
+        h1.text_h.center.header.cd-headline.letters.type
+          span About 30 Second Learning:
+    #me.section.scrollspy
+      .container
+        h2.header.text_b Meet the team:
+        .row
+          .col.s6
+            .card
+              .card-image
+                img(src='img/hen.jpg')
+                |
+                span.card-title Henrique Bolivar
+              .card-content
+                p CEO &amp; Co-Founder
+              .card-action
+                a(href='http://Henriquebolivar.com', target='_blank') My Site
+          .col.s6
+            .card
+              .card-image
+                img(src='img/Jessie1.jpg')
+                |
+                span.card-title Jessie Pullaro
+              .card-content
+                p CTO &amp; Co-Founder
+              .card-action
+                a(href='http://jessiepullaro414.github.io', target='_blank') My Site
+    footer#contact.page-footer.default_color.scrollspy
+      .container
+        .row
+          .col.l3.s12
+            h5.white-text Social
+            ul
+              li
+                a.white-text(href='#')
+                  i.small.fa.fa-facebook-square.white-text
+                  |  Facebook
+              li
+                a.white-text(href='#')
+                  i.small.fa.fa-github-square.white-text
+                  |  Github
+      .footer-copyright.default_color
+        .container  Copyright 2017
+    script(src='min/plugin-min.js')
+    script(src='min/custom-min.js')
