@@ -5,9 +5,24 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
     meta(name='theme-color', content='#2196F3')
     title 30 Second Learning
-    link(href='css/style.css', type='text/css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(href='css/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+    link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
     link(href='min/plugin-min.css', type='text/css', rel='stylesheet')
     link(href='min/custom-min.css', type='text/css', rel='stylesheet')
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script.
+      $(document).ready(function(){
+      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      $('.modal').modal();
+      $('.modal-trigger').leanModal();
+      });
+  #modal1.modal
+    .modal-content
+      h4 Modal Header
+      p A bunch of text
+    .modal-footer
+      a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Agree
   body#top.scrollspy
     #loader-wrapper
       #loader
@@ -17,20 +32,19 @@ html
       nav#nav_f.red(role='navigation')
         .container
           .nav-wrapper
-            a(href='#')
-              img#logo-img(src='./img/30 Second Learning Logo2.png')
+            img#logo-img(src='./img/30 Second Learning Logo2.png')
             ul.right.hide-on-med-and-down
               li
-                a(href='#intro') Login
+                a(href='#modal1') Login
               li
-                a(href='aboutus') About
+                a(href='/aboutus') About
               li
                 a(href='#work') Help
             ul#nav-mobile.side-nav
               li
-                a(href='#intro') Login
+                a(href='#modal1') Login
               li
-                a(href='aboutus') About
+                a(href='/aboutus') About
               li
                 a(href='#work') Help
             a.button-collapse(href='#', data-activates='nav-mobile')
@@ -100,3 +114,6 @@ html
         .container  Copyright 2017
     script(src='min/plugin-min.js')
     script(src='min/custom-min.js')
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='js/materialize.js')
+    script(src='js/init.js')
