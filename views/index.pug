@@ -19,10 +19,49 @@ html
       });
   #modal1.modal
     .modal-content
-      h4 Modal Header
-      p A bunch of text
+      .row
+        h4 Login
+        form.col.s12
+          .row
+            .input-field.col.s12
+              input#email.validate(type='email')
+              |
+              label(for='email') Email
+          .row
+            .input-field.col.s12
+              input#password.validate(type='password')
+              |
+              label(for='password') Password
+          .row
+            a(href='#modalreg') Register
     .modal-footer
-      a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Agree
+      a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Submit
+  #modalreg.modal
+    .modal-content
+      .row
+        h4 Register
+        form.col.s12
+          .row
+            .input-field.col.s6
+              input#first_name.validate(type='text')
+              |
+              label(for='first_name') First Name
+            .input-field.col.s6
+              input#last_name.validate(type='text')
+              |
+              label(for='last_name') Last Name
+          .row
+            .input-field.col.s12
+              input#email.validate(type='email')
+              |
+              label(for='email') Email
+          .row
+            .input-field.col.s12
+              input#password.validate(type='password')
+              |
+              label(for='password') Password
+    .modal-footer
+      a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Submit
   body#top.scrollspy
     #loader-wrapper
       #loader
