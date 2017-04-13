@@ -1,6 +1,6 @@
 {
   "name": "30second",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,5 +13,18 @@
     "morgan": "~1.8.1",
     "pug": "~2.0.0-beta11",
     "serve-favicon": "~2.4.2"
-  }
+  },
+  "description": "30 second learning is a social media platform that uses condensed educational content to target the shortened attention span of the younger generations to optimize learning.",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessiepullaro414/30secondlearning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessiepullaro414/30secondlearning/issues"
+  },
+  "homepage": "https://github.com/jessiepullaro414/30secondlearning#readme"
 }
