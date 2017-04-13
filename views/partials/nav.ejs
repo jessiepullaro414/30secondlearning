@@ -1,0 +1,30 @@
+<div class="navbar-fixed">
+    <nav id="nav_f" class="red" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+
+                <a href="/"><img id="logo-img" src="./img/30 Second Learning Logo2.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <%if (login==false) { %>
+                        <li><a href="#modal1">Login</a></li>
+                        <% } else{ %>
+                            <li><a href="/logout">Logout</a></li>
+                            <% } %>
+                                <li><a href="/aboutus">About</a></li>
+                                <li><a href="#work">Help</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <%if (login==false) { %>
+                        <li><a href="#modal1">Login</a></li>
+                        <% } else{ %>
+                            <li><a href="/logout">Logout</a></li>
+                            <% } %>
+                                <li><a href="/aboutus">About</a></li>
+                                <li><a href="#work">Help</a></li>
+                </ul>
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
